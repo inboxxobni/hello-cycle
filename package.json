@@ -1,0 +1,44 @@
+{
+  "name": "hello-cycle",
+  "version": "0.1.0",
+  "description": "The hello-cycle Cordis plugin.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inboxxobni/hello-cycle.git"
+  },
+  "type": "module",
+  "exports": {
+    ".": "./index.ts",
+    "./package.json": "./package.json"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "4.0.4"
+  },
+  "keywords": [
+    "cordis",
+    "cordis-plugin",
+    "acrylblends"
+  ],
+  "acryl": {
+    "schemaVersion": 1,
+    "artifacts": {
+      "plugins": [
+        "./index.ts"
+      ]
+    },
+    "requires": {
+      "host": [
+        "router"
+      ]
+    },
+    "provides": {
+      "host": []
+    },
+    "slots": {
+      "offers": [],
+      "fills": []
+    },
+    "visibility": "public"
+  }
+}
